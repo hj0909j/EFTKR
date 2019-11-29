@@ -16,7 +16,7 @@ namespace discordnetbot
         {
             DiscordSocketClient client = new DiscordSocketClient();
             client.Log += Log;
-            string token = "NjI2OTE0NTI5NDg1MjU4ODA1.XboyRg.cLf6I5PLAyRKvMpob6ZjylOVhV4"; //고유 토큰
+           
             await client.LoginAsync(TokenType.Bot, token);
             await client.StartAsync();
             client.MessageReceived += MessageReceived;
